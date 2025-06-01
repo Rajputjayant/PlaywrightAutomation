@@ -21,8 +21,8 @@ import { defineConfig, devices } from '@playwright/test';
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-     browserName:'firefox',
-     headeless :true
+     browserName:'chromium',
+     headeless :false
   },
 
   /* Configure projects for major browsers */
