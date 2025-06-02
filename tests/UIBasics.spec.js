@@ -12,7 +12,7 @@ test('Browser context playwright  test', async ({browser})=>
    // step -2 
    // step -3 
 });
-test.only('page playwright test', async ({page})=>
+test('page playwright test', async ({page})=>
 {
    const userName =  page.locator('#username');
    const password = page.locator('input[type="password"]');
