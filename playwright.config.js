@@ -21,8 +21,10 @@ import { defineConfig, devices } from '@playwright/test';
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-     browserName:'firefox',
-     headeless :true
+     browserName:'chromium',
+     headeless :false,
+     screenshot :'on',
+     trace : 'retain-on-failure', // on, off, retain-on-failure
   },
 
   /* Configure projects for major browsers */
