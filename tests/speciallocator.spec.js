@@ -6,6 +6,7 @@ test('Playwright special locator test', async ({page})=>
    await page.getByLabel('Check me out if you Love IceCreams!').click();
    await page.getByLabel('Employed').check();
    await page.getByLabel('Gender').selectOption('Female');
+   await page.pause();
 
 
 });
